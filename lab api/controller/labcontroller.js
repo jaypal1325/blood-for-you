@@ -1,4 +1,15 @@
-const updatecart = async (req, res) => {
+const cart = require('../model/labmodel');
+
+const addBloodtyp = async (req,res) => {
+
+    var data = await cart.create(req.body)
+    console.log(req.body.data);
+    res.status(200).json({
+        status: 'success',
+        data
+    })
+};
+const update = async (req, res) => {
 
     var id = req.params.id; 
 
@@ -8,3 +19,4 @@ const updatecart = async (req, res) => {
         data
     })
 };
+module.exports = {addBloodtyp,update}
