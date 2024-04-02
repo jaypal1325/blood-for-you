@@ -25,7 +25,7 @@ app.post('/banks', bankController.createBank);
 
 
 // connect to mongodb 
-mongoose.connect('mongodb://localhost:27017/Distance' )
+mongoose.connect('mongodb+srv://vagadiyachirag9999:dg4SciXxg2N9Nbwf@cluster0.qz9aab3.mongodb.net/blood-for-you' )
   .then(() => {
     console.log('Connected to MongoDB');
     // Start the server

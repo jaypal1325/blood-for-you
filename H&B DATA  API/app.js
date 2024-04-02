@@ -27,7 +27,7 @@ var upload = multer({ storage: storage })
 app.post('/register',  upload.fields([{ name: 'authorigetion' }, { name: 'logo' }]), userController.register);
 
 // Connect to MongoDB
-mongoose.connect('mongodb://localhost:27017/H&BB-DATA', { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect('mongodb+srv://vagadiyachirag9999:dg4SciXxg2N9Nbwf@cluster0.qz9aab3.mongodb.net/blood-for-you', { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => {
     console.log('Connected to MongoDB');
     // Start the server
@@ -39,3 +39,4 @@ mongoose.connect('mongodb://localhost:27017/H&BB-DATA', { useNewUrlParser: true,
 
   
 module.exports = app;
+

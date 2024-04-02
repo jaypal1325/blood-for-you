@@ -24,6 +24,6 @@ const bankSchema = new mongoose.Schema({
     }
 });
 
-const Bank = mongoose.model('Bank', bankSchema);
+const Bank = mongoose.model('Distance', bankSchema);
 
 module.exports = Bank;

@@ -28,6 +28,6 @@ var userSchema = new mongoose.Schema({
     }
 });
 
-   const register = mongoose.model("user",userSchema);
+   const register = mongoose.model("doctor form",userSchema);
 module.exports = register;
 

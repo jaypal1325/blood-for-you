@@ -24,7 +24,7 @@ userSchema.methods.comparePassword = function(candidatePassword) {
     return bcrypt.compare(candidatePassword, this.password);
 };
 
-const User = mongoose.model('Doctor', userSchema);
+const User = mongoose.model('login', userSchema);
 
 
 module.exports = User;

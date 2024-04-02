@@ -24,7 +24,7 @@ app.post('/login', authController.login);
 
 
 // Connect to MongoDB
-mongoose.connect('mongodb://localhost:27017/A-Login', { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect('mongodb+srv://vagadiyachirag9999:dg4SciXxg2N9Nbwf@cluster0.qz9aab3.mongodb.net/blood-for-you', { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => {
         console.log('Connected to MongoDB');
         app.listen(4000, () => {

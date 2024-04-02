@@ -12,6 +12,6 @@ const labSchema = new mongoose.Schema({
     
   });
 
-const lab = mongoose.model('update', labSchema);
+const lab = mongoose.model('lab', labSchema);
  
 module.exports = lab;
